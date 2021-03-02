@@ -21,14 +21,14 @@ $large: "min-width: 1200px";
 // $mainColor: #3499B5;
 // $secondaryColor: #66B063;
 
-$mainColor: #6d416a;
+$mainColor: #7f0000;
 $secondaryColor: #367588;
 $tertiaryColor: #239886;
 $fourthColor: #ac505a;
 
 $mainFont: 'Source Sans Pro';
 
-$mainGradient: linear-gradient(45deg, rgba(109,65,106, 0.9), rgba(54,117,136,0.9));
+$mainGradient: linear-gradient(45deg, rgba(127,0,0, 0.9), rgba(54,117,136,0.9));
 
 //Regular Mixins
 @mixin image($filename_sans_ext, $ext, $background_size){
@@ -65,7 +65,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255,255,255, 0.8);
+  background: rgba(255,255,255, 1);
   border-bottom: solid 2px rgba(255,255,255, 0.5);
   z-index: 10;
   &.on-load{
@@ -138,7 +138,6 @@ header{
   justify-content: center;
   flex-direction: column;
   z-index: 3;
-  @include image('main-bg', 'jpg', cover);
   background-attachment: fixed;
   .gradient-overlay{
     width: 100%;
@@ -148,8 +147,6 @@ header{
     position: absolute;
   }
   .developer-section{
-    border: solid 2px rgba(255,255,255, 0.5);
-    transform: rotate(-5deg);
     margin-top: auto;
     z-index: 5;
   }
@@ -159,16 +156,16 @@ header{
     font-size: 30px;
     font-weight: 300;
     padding: 40px 100px;
-    transform: rotate(5deg);
+
     @media($mobile){
       padding: 20px 40px;
     }
     .name{
-      font-size: 55px;
+      font-size: 85px;
       margin: 0;
       @media($mobile){
-        font-size: 30px;
-        line-height: 40px;
+        font-size: 50px;
+        line-height: 70px;
       }
     }
     p{
@@ -180,15 +177,15 @@ header{
     }
   }
   .picture-container{
-    width: 120px;
-    height: 120px;
+    width: 250px;
+    height: 250px;
     border: solid 2px rgba(255,255,255,0.5);
     margin: 40px 0 -70px;
     transform: rotate(8deg);
     z-index: 5;
     @media($mobile){
-      width: 100px;
-      height: 100px;
+      width: 200px;
+      height: 200px;
       margin: 40px 0 -50px;
     }
     .inner-picture{
@@ -198,7 +195,7 @@ header{
       background-color: white;
       border: solid 2px rgba(255,255,255,0.5);
       box-shadow: 0px 3px 15px white;
-      @include image('profile-picture', 'jpg', cover);
+      @include image('new-profile', 'jpg', cover);
     }
   }
   .contact-me{
@@ -222,125 +219,53 @@ header{
   }
 }
 
-.skill-section{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 60px 15px;
-  border-top: solid 4px rgba(35,152,134, 0.6);
-  border-bottom: solid 4px rgba(35, 152, 134, 0.6);
-  background-color: #f5f5f5;
-  @media($mobile){
-    padding: 40px 15px;
-  }
-
-  h1{
-    color: $tertiaryColor;
-  }
-  .skill-container{
-    display: flex;
-    border: solid 2px rgba(35,152,134, 0.6);
-    @media($mobile){
-      flex-direction: column;
-      width: 100%;
-    }
-    .skill{
-      padding: 15px 30px;
-      background: $tertiaryColor;
-      color: white;
-      font-weight: 300;
-      @media($mobile){
-        text-align: center;
-      }
-    }
-    .skill+.skill{
-      border-left: solid 2px rgba(255,255,255,0.2);
-      @media($mobile){
-        border-left: none;
-        border-top: solid 2px rgba(255,255,255,0.2);
-      }
-    }
-  }
-  .skills-obj{
-    margin: 40px 0 0 0;
-    font-size: 20px;
-    letter-spacing: 2px;
-    font-weight: 400;
-    padding: 20px 40px;
-    background: #363636;
-    border: solid 2px rgba(35,152,134, 0.6);
-    color: white;
-    @media($mobile){
-      padding: 15px;
-      width: 100%;
-      font-size: 16px;
-    }
-    .variable{
-      color: $fourthColor;
-      font-weight: 400;
-    }
-    .indent{
-      margin: 0 0 0 15px;
-    }
-    .string-highlight{
-      color: $tertiaryColor;
-      font-weight: 300;
-    }
-  }
+.skill-header {
+  margin: 50px 15px 20px;
+  font-size: 35px;
+  text-align: center;
 }
 
-.portfolio-section{
+.skill-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  padding: 80px 15px;
-  background: $mainGradient;
+  flex-wrap: wrap;
+  padding: 20px 15px 80px 15px;
+
   @media($mobile){
     padding: 40px 15px;
   }
-  h1{
-    color: white;
-  }
-  .row{
+
+  .skill {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 100%;
-    flex-wrap: wrap;
-    a{
-      margin: 20px;
-      border: solid 2px rgba(255,255,255,0.2);
-      width: 33.33%;
-      color: white;
-      text-decoration: none;
-      font-size: 20px;
-      font-weight: 300;
-      padding: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      max-width: 240px;
-      min-width: 230px;
-      transition: all .3s ease-in-out;
-      @media($mobile){
-        width: 100%;
-        margin: 20px 0;
-        max-width: none;
-      }
-      &:hover{
-        border: solid 2px rgba(255,255,255,1);
-        box-shadow: 0px 0px 10px rgba(255,255,255,0.5);
-      }
+    align-items: center;
+    border: solid 1px #cdcdcd;
+    padding: 20px;
+    box-shadow: 0 0 15px #dadada;
+    border-radius: 5px;
+    width: 300px;
+    margin: 20px;
+    color: #595959;
+    background-color: #f6f6f6;
+    .skill-name {
+      font-size: 30px;
+    }
+    .skill-years {
+      font-size: 22px;
+      margin-top: 5px;
+      display: block;
     }
   }
 }
+
 
 footer{
   height: 50px;
   padding: 0 20px;
-  border-top: solid 4px rgba(35,152,134, 0.6);
-  border-bottom: solid 4px rgba(35, 152, 134, 0.6);
+  border-top: solid 4px rgba($secondaryColor, 0.6);
+  border-bottom: solid 4px rgba($secondaryColor, 0.6);
   display: flex;
   justify-content: space-between;
   align-items: center;
