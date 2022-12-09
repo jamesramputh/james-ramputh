@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat');
 
 body {
-  font-family: 'Montserrat',  -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 // Media mixins
@@ -308,6 +308,13 @@ $secondaryColor: #f0a433;
   margin: -280px auto 150px 20%;
   display: flex;
   justify-content: center;
+
+  @media only screen 
+    and (min-device-width: 810px) 
+    and (max-device-width: 1366px) 
+    and (-webkit-min-device-pixel-ratio: 2) {
+      display: none;
+  }
 
   .large-folding-cube {
     transform: rotateZ(135deg);
