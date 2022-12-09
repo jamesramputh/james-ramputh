@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat');
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 // Media mixins
@@ -189,7 +189,7 @@ $secondaryColor: #f0a433;
       position: relative;
 
       @media($mobile){
-        font-size: 30px;
+        font-size: 26px;
       }
 
       &::before {
@@ -266,7 +266,7 @@ $secondaryColor: #f0a433;
 
     @media($ltDesktop){
       color: white;
-      font-size: 36px;
+      font-size: 30px;
     }
 
     &::before {
