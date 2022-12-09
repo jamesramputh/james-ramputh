@@ -1,0 +1,89 @@
+// $mainColor:  rgba(127, 0, 0, 0.9);
+// $secondaryColor: rgba(54, 117, 136, 0.9);
+
+$mainColor:  #23989b;
+$secondaryColor: #f0a433;
+
+header{
+    position: sticky;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.5);
+    z-index: 10;
+    box-shadow: 0 0 10px #e5e5e5;
+    
+    .loader.header{
+      height: 50px;
+      width: 50px;
+      z-index: 10;
+      &:hover{
+        .sk-folding-cube{
+          transform: rotateZ(135deg);
+          box-shadow: 3px -3px 10px white;
+        }
+        .jr-logo{
+          transform: rotateZ(-495deg);
+        }
+      }
+      .sk-folding-cube{
+        box-shadow: 3px 3px 10px $secondaryColor;
+        background: $secondaryColor;
+        transition: all .5s ease-in-out;
+      }
+    }
+    .header-overlay{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px;
+    }
+    .jr-logo{
+      font-size: 22px;
+      padding: 5px;
+      height: 40px;
+      width: 40px;
+      color: white;
+      font-weight: 300;
+      background: rgba(0,0,0,0.5);
+      text-align: center;
+      transform: rotateZ(-45deg);
+      transition: all .5s ease-in-out;
+    }
+    .social{
+      display: flex;
+
+      a {
+        color: white;
+        font-size: 216pxpx;
+        color: #525252;
+        transition: all .3s ease-in-out;
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+
+        &:hover{
+          color: rgba(0,0,0,0.5);
+
+          svg {
+            fill: rgba(0,0,0,0.5);
+          }
+        }
+
+        svg {
+          margin-left: 7px;
+          transition: all .3s ease-in-out;
+        }
+      }
+      a+a {
+        margin-left: 15px;
+      }
+    }
+
+  }

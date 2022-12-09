@@ -1,0 +1,48 @@
+$mainColor:  #23989b;
+$secondaryColor: #f0a433;
+
+// Media mixins
+$mobile: "max-width: 767px";
+$gtMobile: "min-width: 768px";
+
+$ltDesktop: "max-width: 979px";
+$gtTablet: "min-width: 980px";
+
+$gtDesktop: "min-width: 1200px";
+$ltLarge: "max-width: 1199px";
+
+$normal: "min-width: 980px) and (max-width: 1199px";
+
+$small: "min-width: 768px) and (max-width: 979px";
+
+$large: "min-width: 1200px";
+
+footer{
+    height: 50px;
+    padding: 0 20px;
+    border-top: solid 2px rgba($secondaryColor, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    width: 100%;
+
+    @media($mobile){
+      flex-direction: column;
+      padding: 20px;
+      height: auto;
+    }
+    .copyright{
+      color: #525252;
+      font-weight: 300;
+    }
+    .message{
+      display: flex;
+      align-items: center;
+      color: #525252;
+
+      svg {
+        margin: 0 7px;
+      }
+    }
+  }

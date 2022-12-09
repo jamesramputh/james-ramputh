@@ -1,0 +1,9 @@
+export { default as CodeBranchSolid } from "./CodeBranchSolid";
+export { default as CodeCommitSolid } from "./CodeCommitSolid";
+export { default as CodeSolid } from "./CodeSolid";
+export { default as EnvelopeSolid } from "./EnvelopeSolid";
+export { default as Github } from "./Github";
+export { default as HeartRegular } from "./HeartRegular";
+export { default as Linkedin } from "./Linkedin";
+export { default as LocationDotSolid } from "./LocationDotSolid";
+export { default as UserSolid } from "./UserSolid";
