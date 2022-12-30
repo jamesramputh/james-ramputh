@@ -112,7 +112,7 @@ const App = () => {
           1000,
           ]}
           speed={50} // Custom Speed from 1-99 - Default Speed: 40
-          style={{ fontSize: '20px' }}
+          style={{ fontSize: '16px' }}
           wrapper="span" // Animation will be rendered as a <span>
           repeat={Infinity} // Repeat this Animation Sequence infinitely
         />

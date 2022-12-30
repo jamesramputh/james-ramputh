@@ -111,16 +111,12 @@ $secondaryColor: #f0a433;
   }
 
   h1 {
-    font-size: 60px;
+    font-size: 40px;
     margin: 0;
     text-transform: uppercase;
     color: #525252;
     font-family: "Noto Serif Display", serif, sans-serif;
     position: relative;
-
-    @media($ltDesktop){
-      font-size: 40px;
-    }
 
     &::before {
       content: '';
@@ -257,7 +253,7 @@ $secondaryColor: #f0a433;
 
 
   h3 {
-    font-size: 40px;
+    font-size: 30px;
     margin: 0;
     text-transform: uppercase;
     color: #525252;
@@ -282,13 +278,12 @@ $secondaryColor: #f0a433;
 
   p, span {
     display: block;
-    font-size: 20px;
+    font-size: 16px;
     margin: 5px 10px 0 0;
     color: #525252;
 
     @media($ltDesktop){
       color: white;
-      font-size: 18px;
     }
   }
 
@@ -305,7 +300,7 @@ $secondaryColor: #f0a433;
 
 .skills{
   width: 100%;
-  margin: -280px auto 150px 20%;
+  margin: -130px auto 150px 20%;
   display: flex;
   justify-content: center;
 
@@ -319,8 +314,8 @@ $secondaryColor: #f0a433;
   .large-folding-cube {
     transform: rotateZ(135deg);
     box-shadow: 3px -3px 15px $secondaryColor;
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     background-color: $secondaryColor;
   }
 
