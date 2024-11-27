@@ -28,7 +28,7 @@ $large: "min-width: 1200px";
 
 
 $mainColor:  #23989b;
-$secondaryColor: #f0a433;
+$secondaryColor: #6F4E37;
 
 @mixin image($filename_sans_ext, $ext, $background_size){
   $file: '#{$filename_sans_ext}.#{$ext}';

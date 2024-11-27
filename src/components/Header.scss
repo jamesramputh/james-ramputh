@@ -2,7 +2,7 @@
 // $secondaryColor: rgba(54, 117, 136, 0.9);
 
 $mainColor:  #23989b;
-$secondaryColor: #f0a433;
+$secondaryColor: #6F4E37;
 
 header{
     position: sticky;
@@ -79,6 +79,7 @@ header{
         svg {
           margin-left: 7px;
           transition: all .3s ease-in-out;
+          fill: $secondaryColor;
         }
       }
       a+a {

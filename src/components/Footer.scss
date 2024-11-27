@@ -1,6 +1,5 @@
 $mainColor:  #23989b;
-$secondaryColor: #f0a433;
-
+$secondaryColor: #6F4E37;
 // Media mixins
 $mobile: "max-width: 767px";
 $gtMobile: "min-width: 768px";
@@ -43,6 +42,7 @@ footer{
 
       svg {
         margin: 0 7px;
+        fill: $secondaryColor;
       }
     }
   }

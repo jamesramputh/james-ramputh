@@ -15,7 +15,7 @@ const Footer = () => {
          { today.getFullYear() } - James Ramputh
       </div>
       <div className="message">
-        Made with <HeartRegular fill="#f0a433" height="20px" width="20px" /> using ReactJS
+        Made with <HeartRegular height="20px" width="20px" /> using ReactJS
       </div>
     </footer>
   )

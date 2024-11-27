@@ -63,7 +63,7 @@ const App = () => {
       <div className="right-side-2">
         <h3>About Me</h3>
 
-        <p>I've been doing Front-End Web development for 8 years now.</p>
+        <p>I've been doing Front-End Web development for 10 years now.</p>
 
         <TypeAnimation
           // Same String at the start will only be typed once, initially
@@ -92,6 +92,8 @@ const App = () => {
           1000,
           `I've worked with Next.js`,
           1000,
+          `I've worked with Scala`,
+          1000,
           `I've worked with Apollo`,
           1000,
           `I've worked with Vue.js`,
@@ -100,15 +102,11 @@ const App = () => {
           1000,
           `I've worked with MySQL`,
           1000,
-          `I've worked with Objective-C`,
-          1000,
           `I've worked with Swift`,
           1000,
           `I've worked with Xcode`,
           1000,
           `I've worked with NodeJS`,
-          1000,
-          `I've worked with ESLint`,
           1000,
           ]}
           speed={50} // Custom Speed from 1-99 - Default Speed: 40
@@ -118,7 +116,7 @@ const App = () => {
         />
 
         <p>Some of my hobbies include playing piano, drawing, and photography.</p>
-        <p className="location">Currently based in Toronto, ON <LocationDotSolid fill="#202020" height="20px" width="20px" /> </p>
+        <p className="location">Currently based in Toronto, ON <LocationDotSolid fill="#6F4E37" height="20px" width="20px" /> </p>
           
       </div>
 
