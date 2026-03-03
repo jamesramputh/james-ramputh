@@ -1,57 +1,14 @@
 import './App.scss';
-import './scss/Loader.scss'
 import { TypeAnimation } from 'react-type-animation';
 
-import { Header, Footer } from './components'
-import { CodeCommitSolid, LocationDotSolid } from './Icons';
+import { Header, Footer, Hero } from './components'
+import { LocationDotSolid } from './Icons';
 
 const App = () => {
 
   return (
     <div className="App">
-
-    <div className="full-page-container">
-
-      <div className="left-side">
-
-        <div className="skills">
-          <div className="large-folding-cube">
-            <div className="skill-box">
-              <CodeCommitSolid fill="#FFFFFF" height="40px" width="40px" />
-            </div>
-          </div>
-        </div>
-
-        <h1>Front End Software<br/> Engineer</h1>
-
-        <h2>James Ramputh</h2>
-
-        <div className="loader">
-          <div className="sk-folding-cube">
-            <div className="jr-logo">JR</div>
-          </div>
-        </div>
-
-      </div>
-
-      <div className="right-side">
-        <div className="right-side-overlay">
-          <div className="right-side-content">
-            <h1>Front End Software<br/> Engineer</h1>
-
-            <h2>James Ramputh</h2>
-
-            <div className="loader">
-              <div className="sk-folding-cube">
-                <div className="jr-logo">JR</div>
-              </div>
-            </div>
-          </div>
- 
-        </div>
-      </div>
-
-    </div>
+      <Hero />
 
     <Header />
 
@@ -63,51 +20,30 @@ const App = () => {
       <div className="right-side-2">
         <h3>About Me</h3>
 
-        <p>I've been doing Front-End Web development for 10 years now.</p>
+        <p>I've been doing Front-End Web development for 8 years now.</p>
 
         <TypeAnimation
-          // Same String at the start will only be typed once, initially
           sequence={[
-          `I've worked with ...`,
-          1000,
-          `I've worked with React`,
-          1000,
-          `I've worked with Typescript`,
-          1000,
-          `I've worked with GraphQL`,
-          1000,
-          `I've worked with SCSS`,
-          1000,
-          `I've worked with HTML`,
-          1000,
-          `I've worked with JSX`,
-          1000,
-          `I've worked with Javascript`,
-          1000,
-          `I've worked with Yarn`,
-          1000,
-          `I've worked with Webpack`,
-          1000,
-          `I've worked with NPM`,
-          1000,
-          `I've worked with Next.js`,
-          1000,
-          `I've worked with Scala`,
-          1000,
-          `I've worked with Apollo`,
-          1000,
-          `I've worked with Vue.js`,
-          1000,
-          `I've worked with AngularJS`,
-          1000,
-          `I've worked with MySQL`,
-          1000,
-          `I've worked with Swift`,
-          1000,
-          `I've worked with Xcode`,
-          1000,
-          `I've worked with NodeJS`,
-          1000,
+          `What I work with:`,
+          1200,
+          `Languages & Frameworks: React, TypeScript, JavaScript`,
+          1500,
+          `Languages & Frameworks: HTML/JSX, CSS/SCSS, GraphQL`,
+          1500,
+          `Languages & Frameworks: Next.js, Vue.js, AngularJS, Node.js, PHP`,
+          1600,
+          `Tools: Webpack, NPM/Yarn, Apollo, Storybook, Jest`,
+          1500,
+          `Tools: Jenkins, Spinnaker, GitHub, Bitbucket, Jira, Figma`,
+          1600,
+          `Tools: Cursor AI IDE`,
+          1300,
+          `Additional: Micro Frontends (MFE), Server-Driven UI (SDUI)`,
+          1600,
+          `Additional: A/B Testing, CI/CD, AODA compliance, MySQL`,
+          1600,
+          `Additional: Backend for Frontend (BFF)`,
+          1500,
           ]}
           speed={50} // Custom Speed from 1-99 - Default Speed: 40
           style={{ fontSize: '16px' }}
@@ -116,7 +52,48 @@ const App = () => {
         />
 
         <p>Some of my hobbies include playing piano, drawing, and photography.</p>
-        <p className="location">Currently based in Toronto, ON <LocationDotSolid fill="#6F4E37" height="20px" width="20px" /> </p>
+
+        <div className="projects-section">
+          <h4>Notable Personal Projects</h4>
+          <ul className="projects-list">
+            <li>
+              <a
+                className="project-link"
+                href="https://ramputh-media.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Ramputh Media
+              </a>
+              <span>Real Estate Photography & Videography Services</span>
+            </li>
+            <li>
+              <a
+                className="project-link"
+                href="https://wedding2024.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Aisya & James - Wedding 2024
+              </a>
+              <span>Wedding microsite and digital event experience</span>
+            </li>
+            <li>
+              <a
+                className="project-link"
+                href="https://doculyze.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Doculyze
+              </a>
+              <span>AI-powered contract risk analysis platform</span>
+            </li>
+          </ul>
+        </div>
+
+        <p className="location">Currently based in Toronto, ON <LocationDotSolid fill="#202020" height="20px" width="20px" /> </p>
+
           
       </div>
 

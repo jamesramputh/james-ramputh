@@ -1,5 +1,4 @@
-$mainColor:  #23989b;
-$secondaryColor: #6F4E37;
+@import '../App.scss';
 // Media mixins
 $mobile: "max-width: 767px";
 $gtMobile: "min-width: 768px";

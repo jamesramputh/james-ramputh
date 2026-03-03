@@ -27,8 +27,8 @@ $small: "min-width: 768px) and (max-width: 979px";
 $large: "min-width: 1200px";
 
 
-$mainColor:  #23989b;
-$secondaryColor: #6F4E37;
+$mainColor:  #f0a433;
+$secondaryColor: #17243a;
 
 @mixin image($filename_sans_ext, $ext, $background_size){
   $file: '#{$filename_sans_ext}.#{$ext}';
@@ -272,7 +272,7 @@ $secondaryColor: #6F4E37;
       display: block;
       height: 5px;
       width: 200px;
-      background-color: $secondaryColor;
+      background-color: $mainColor;
     }
   }
 
@@ -284,6 +284,68 @@ $secondaryColor: #6F4E37;
 
     @media($ltDesktop){
       color: white;
+    }
+  }
+
+  .projects-section {
+    margin-top: 20px;
+  }
+
+  h4 {
+    margin: 0 0 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2f2f2f;
+
+    @media($ltDesktop){
+      color: white;
+    }
+  }
+
+  .projects-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+
+    li {
+      // border: 1px solid rgba(23, 36, 58, 0.15);
+      border-radius: 10px;
+      padding: 10px 0;
+      // background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(2px);
+
+      @media($ltDesktop){
+        border-color: rgba(255, 255, 255, 0.35);
+        background: rgba(23, 36, 58, 0.45);
+        padding: 10px 12px;
+      }
+    }
+  }
+
+  .project-link {
+    display: inline-block;
+    color: #0d1b2f;
+    border-bottom: 2px solid $mainColor;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 0 0 4px;
+    line-height: 2;
+
+    &:hover,
+    &:focus {
+      border-bottom: 2px solid transparent;
+      transition: border-color .2s ease-in-out, color .2s ease-in-out;
+    }
+
+    @media($ltDesktop){
+      color: #fff;
+
+      &:hover,
+      &:focus {
+        color: #fff;
+      }
     }
   }
 
