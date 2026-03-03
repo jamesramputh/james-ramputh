@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="heroContainer">
       <div className="heroContent">
         <div className="bubble">
-          <span>Front-End Engineering</span> | <span>UI Architecture</span>
+          <span>Front-End Engineering</span> | <span>UX Design</span>
         </div>
 
         <h1>JAMES RAMPUTH</h1>

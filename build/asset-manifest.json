@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/james-ramputh/static/css/main.cf4e8182.css",
-    "main.js": "/james-ramputh/static/js/main.136277dc.js",
-    "static/js/787.baf0df8e.chunk.js": "/james-ramputh/static/js/787.baf0df8e.chunk.js",
-    "static/media/toronto-bg.jpg": "/james-ramputh/static/media/toronto-bg.563444a6092555e493c2.jpg",
-    "static/media/black-and-white.jpg": "/james-ramputh/static/media/black-and-white.7bea4402fe2ea7f29467.jpg",
-    "index.html": "/james-ramputh/index.html",
-    "main.cf4e8182.css.map": "/james-ramputh/static/css/main.cf4e8182.css.map",
-    "main.136277dc.js.map": "/james-ramputh/static/js/main.136277dc.js.map",
-    "787.baf0df8e.chunk.js.map": "/james-ramputh/static/js/787.baf0df8e.chunk.js.map"
+    "main.css": "/static/css/main.c8640b11.css",
+    "main.js": "/static/js/main.71274bf2.js",
+    "static/js/787.baf0df8e.chunk.js": "/static/js/787.baf0df8e.chunk.js",
+    "static/media/toronto-bg.jpg": "/static/media/toronto-bg.563444a6092555e493c2.jpg",
+    "static/media/black-and-white.jpg": "/static/media/black-and-white.7bea4402fe2ea7f29467.jpg",
+    "index.html": "/index.html",
+    "main.c8640b11.css.map": "/static/css/main.c8640b11.css.map",
+    "main.71274bf2.js.map": "/static/js/main.71274bf2.js.map",
+    "787.baf0df8e.chunk.js.map": "/static/js/787.baf0df8e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf4e8182.css",
-    "static/js/main.136277dc.js"
+    "static/css/main.c8640b11.css",
+    "static/js/main.71274bf2.js"
   ]
 }

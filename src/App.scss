@@ -287,6 +287,17 @@ $secondaryColor: #17243a;
     }
   }
 
+  .about-me-text, .type-animation {
+    @media($ltDesktop){
+      background: rgba(23, 36, 58, 0.45);
+      border-radius: 10px;
+      padding: 10px 0;
+      backdrop-filter: blur(2px);
+      padding: 10px 12px;
+    }
+
+  }
+
   .projects-section {
     margin-top: 20px;
   }
@@ -310,10 +321,8 @@ $secondaryColor: #17243a;
     gap: 10px;
 
     li {
-      // border: 1px solid rgba(23, 36, 58, 0.15);
       border-radius: 10px;
       padding: 10px 0;
-      // background: rgba(255, 255, 255, 0.75);
       backdrop-filter: blur(2px);
 
       @media($ltDesktop){

@@ -20,7 +20,7 @@ const App = () => {
       <div className="right-side-2">
         <h3>About Me</h3>
 
-        <p>I've been doing Front-End Web development for 8 years now.</p>
+        <p className="about-me-text">I've been doing Front-End Web development for 8 years now.</p>
 
         <TypeAnimation
           sequence={[
@@ -49,9 +49,10 @@ const App = () => {
           style={{ fontSize: '16px' }}
           wrapper="span" // Animation will be rendered as a <span>
           repeat={Infinity} // Repeat this Animation Sequence infinitely
+          className="type-animation"
         />
 
-        <p>Some of my hobbies include playing piano, drawing, and photography.</p>
+        <p className="about-me-text">Some of my hobbies include playing piano, drawing, and photography.</p>
 
         <div className="projects-section">
           <h4>Notable Personal Projects</h4>
